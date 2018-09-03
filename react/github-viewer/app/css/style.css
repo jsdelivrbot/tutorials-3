@@ -1,0 +1,22 @@
+.label {
+	margin-right: 10px;
+}
+
+.thumbnail {
+	width: 100%;
+}
+
+.repoLink {
+	font-size: 1.1em;
+}
+
+.navbar-static-top {
+	margin-bottom: 15px;
+}
+.form-inline {
+	margin-bottom: 15px;
+}
+
+.form-control {
+	margin-right: 10px;
+}

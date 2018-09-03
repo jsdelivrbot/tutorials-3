@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asynchronous Javascript and XML</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+
+/*
+      $.get("some.html", function(data){
+        alert("loaded html");
+      })
+*/
+
+  // Get content from a file and add it to the header
+      $.ajax({url:"some.html"}).done(function(data){
+        $("#h1").append(data);
+      });
+
+    </script>
+  </body>
+</html>

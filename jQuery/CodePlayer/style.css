@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+#menuBar {
+    width: 100%;
+    height: 50px;
+    background-color: #648ad6;
+    color: #e3e6ed;
+    border-bottom: 1px solid grey;
+}
+
+#logo {
+    float: left;
+    padding: 10px 0 0 20px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+#buttonDiv {
+    float: right;
+    padding: 11px 50px 0 0;
+}
+
+#buttonDiv button {
+    font-size: 24px;
+    border: 1px solid #3B5998;
+    border-radius: 3px;
+    background-color: #648ad6;
+    color: #e3e6ed;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#buttonDiv button:hover {
+    background-color: #3B5998;
+    cursor: pointer;
+}
+
+#toggles {
+    cursor: pointer;
+    width: 403px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    border: 2px solid #3B5998;
+    border-radius: 3px;
+    height: 28px;
+    position: relative;
+    top: 7px;
+}
+
+#toggles li {
+    float: left;
+    border-right: 1px solid #3B5998;
+    width: 100px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.codeContainer {
+    height: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.codeLabel {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #3B5998;
+    padding-right: 2px;
+    border-bottom: 2px solid #3B5998;
+}
+
+.codeContainer textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 2px solid #648AD6;
+    font-family: monotype;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    padding: 35px 10px 10px 10px;
+}
+
+#CSSContainer, #JavaScriptContainer {
+    display: none;
+}
+
+iframe {
+    position: relative;
+    left: 10px;
+    border: none;
+}
+
+.selected {
+    background-color: #3B5998
+}

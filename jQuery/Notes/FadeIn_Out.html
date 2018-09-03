@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning jQuery</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="fade">Get Faded</button>
+        <button id="unfade">Oh shit go back</button>
+        <p>Dank memes Dank memes Dank memes</p>
+
+        <script>
+        $("#fade").click(function() {
+            $("p").fadeOut(500); //("slow"), ("fast")
+            //Lots of possible parameters for this
+            //Can also provide callback function
+        });
+
+        $("#unfade").click(function() {
+            $("p").fadeIn(2000, function() {
+                alert("The memes are back!");
+            });
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CodePlayer</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="menuBar">
+                <div id="logo">JSFizzle</div>
+
+                <div id="buttonDiv">
+                    <button id="runButton">&nbsp&nbspRun&nbsp&nbsp</button>
+                </div>
+
+                <ul id="toggles">
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle">JavaScript</li>
+                    <li class="toggle selected" style="border:none">Result</li>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+                <div class="codeContainer" id="HTMLContainer">
+                    <div class="codeLabel">HTML</div>
+                    <textarea id="htmlCode"><h1>Hello World!</h1></textarea>
+                </div>
+
+                <div class="codeContainer" id="CSSContainer">
+                    <div class="codeLabel">CSS</div>
+                    <textarea id="cssCode">html { background-color: blue}</textarea>
+                </div>
+
+                <div class="codeContainer" id="JavaScriptContainer">
+                    <div class="codeLabel">JS</div>
+                    <textarea id="javascriptCode">alert("hello!")</textarea>
+                </div>
+                <div class="codeContainer" id="ResultContainer">
+                    <div class="codeLabel">Result</div>
+                    <iframe id="resultFrame"></iframe>
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

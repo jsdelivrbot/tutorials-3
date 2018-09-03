@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Site!</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+
+          <div id="error"></div>
+
+          <form id="validationForm" method="POST">
+            <label for="email">Email</label>
+            <input name="email" id="email"><br>
+
+            <label for="phone">Phone</label>
+            <input name="phone" id="phone"><br>
+
+            <label for="pass">Password</label>
+            <input name="pass" type="password" id="pass1">
+
+            <label for="pass2">Re-Enter Password</label>
+            <input name="pass2" type="password" id="pass2">
+
+            <input id="submitBtn" type="submit" value="Submit">
+          </form>
+        </div>
+
+        <script src="regex.js"></script>
+    </body>
+</html>

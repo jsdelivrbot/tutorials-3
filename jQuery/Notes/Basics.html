@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Learning jQuery</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+<body>
+    <div id="circle">
+    </div>
+
+    <p>Text</p>
+
+    <iframe src="https://www.cnn.com/"></iframe>
+
+    <script>
+        $("#circle").click(function(){
+        //html function can either return or modify
+        //alert($("p").html());
+        $("p").html("different text");
+
+        //attr function can either return the element, or set a new one (2nd param)
+        alert($("iframe").attr("src"));
+        //$("iframe").attr("src", "reddit.com/r/nba");
+        });
+
+        $("#circle").hover(function(){
+        $("p").html("lol");
+        });
+    </script>
+</body>
+</html>

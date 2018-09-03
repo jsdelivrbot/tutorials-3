@@ -1,0 +1,27 @@
+#circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100px;
+}
+
+#draggable {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  color: white;
+}
+
+#resizable {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+}
+
+#target {
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+  color: white;
+}
